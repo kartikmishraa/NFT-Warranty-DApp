@@ -6,8 +6,9 @@
   justify-content: center;
   align-items: center;
 }
-.wrapper{
-  background: linear-gradient(120deg,  #343A4F, #15172b);;
+.wrapper {
+  background: linear-gradient(120deg, #343a4f, #15172b);
+  /* background: rgb(229, 168, 224); */
   border-radius: 10px;
   width: 69%;
   height: 85%;
@@ -15,7 +16,8 @@
   justify-content: center;
   align-items: center;
 }
-.seller,.customer{
+.seller,
+.customer {
   width: 50%;
   height: 100%;
   align-items: center;
@@ -23,14 +25,15 @@
   justify-content: center;
   flex-direction: column;
 }
-img{
+img {
   width: 42%;
   height: 40%;
 }
-.margin-top-home{
+.margin-top-home {
   margin-top: 2rem;
 }
 
-.seller:hover,.customer:hover{
+.seller:hover,
+.customer:hover {
   background-color: rgb(233, 227, 227);
 }
