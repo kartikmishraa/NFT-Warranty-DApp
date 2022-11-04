@@ -1,17 +1,18 @@
 .main-container {
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(-135deg, #c850c0, #4158d0);
+  /* background: linear-gradient(-135deg, #c850c0, #4158d0); */
+  background-color: rgb(99, 95, 95);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .wrapper {
-  background: linear-gradient(120deg, #343a4f, #15172b);
-  /* background: rgb(229, 168, 224); */
-  border-radius: 10px;
-  width: 69%;
-  height: 85%;
+  /* background: linear-gradient(120deg, #343a4f, #15172b); */
+  background: white;
+  border-radius: 3rem;
+  width: 60%; /* 69 and 85*/
+  height: 55%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,6 +25,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  text-transform: uppercase;
 }
 img {
   width: 42%;
@@ -35,5 +37,8 @@ img {
 
 .seller:hover,
 .customer:hover {
-  background-color: rgb(233, 227, 227);
+  /* background-color: rgb(233, 227, 227); */
+  border: solid black 3px;
+  background-color: #f8c1f4;
+  border-radius: 3rem;
 }
