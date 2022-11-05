@@ -1,11 +1,11 @@
 import { React } from "react";
 import { useEffect, useState } from "react";
 // import "./styles/main.css";
+// import "./css/home.css";
 import { ethers } from "ethers";
 import warrantyCard from "../utils/WarrantyCard.json";
 // import SellerMain from "./SellerMain";
 const CONTRACT_ADDRESS = "0x68cBeD2FAAe2B84119b3ce52844C37532651f5CF";
-
 
 const CustomerLogin = () => {
   const [currentAccount, setCurrentAccount] = useState("");
@@ -97,8 +97,6 @@ const CustomerLogin = () => {
     }
   };
 
-  
-
   // Render Methods
 
   /*
@@ -112,8 +110,7 @@ const CustomerLogin = () => {
         <div className="wrapper">
           <div className="form">
             <div className="title">Welcome!</div>
-            <div className="subtitle">Please connect your blockchain wallet</div>
-
+            <div className="subtitle">Please connect your wallet</div>
             <button type="text" className="submit" onClick={connectWallet}>
               Connect
             </button>
@@ -129,13 +126,12 @@ const CustomerLogin = () => {
   3. Make all the form fields required and then the button.
   4. The button will call the method askContractToMintNft on click.
   */
-  const renderConnectedContainer = () => (
-    window.location.pathname="/customer/dashboard"
-  );
+  const renderConnectedContainer = () =>
+    (window.location.pathname = "/customer/dashboard");
 
   useEffect(() => {
     checkIfWalletIsConnected();
-  },[]);
+  });
 
   /*
    * Added a conditional render! We don't want to show Connect to Wallet if we're already connected :).
@@ -151,7 +147,6 @@ const CustomerLogin = () => {
       </div>
     </div>
   );
-  
 };
 
 export default CustomerLogin;

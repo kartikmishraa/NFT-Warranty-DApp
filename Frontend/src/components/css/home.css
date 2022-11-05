@@ -38,7 +38,7 @@ img {
 .seller:hover,
 .customer:hover {
   /* background-color: rgb(233, 227, 227); */
-  border: solid black 3px;
+  /* border: solid black 3px; */
   background-color: #f8c1f4;
   border-radius: 3rem;
 }
